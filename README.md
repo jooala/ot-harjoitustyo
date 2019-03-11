@@ -2,9 +2,10 @@
 
 Tänne tulee jossain vaiheessa *kunnollinen* **tietopläjäys** projektista, mutta tällä hetkellä se on pahasti keskeneräinen. Katsotaan lopulta, mitä tänne keksitään. 
 
-**Toivottavasti pidätte**
+**Toivottavasti pidätte!**
 
 *- Joonas Alanenpää*
+
 
 ## Tehtävät
 ### Viikko 1:
