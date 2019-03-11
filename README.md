@@ -9,4 +9,5 @@ Tänne tulee jossain vaiheessa *kunnollinen* **tietopläjäys** projektista, mut
 ## Tehtävät
 ### Viikko 1:
 [gitlog.txt](https://github.com/jooala/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+
 [komentorivi.txt](https://github.com/jooala/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
