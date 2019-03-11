@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka, Harjoitustyö
 
-Tänne tulee jossain vaiheessa *kunnollinen* **tietopläjäys** projektista, mutta tällä hetkellä se on pahasti keskeneräinen. 
+Tänne tulee jossain vaiheessa *kunnollinen* **tietopläjäys** projektista, mutta tällä hetkellä se on pahasti keskeneräinen. Katsotaan lopulta, mitä tänne keksitään. 
 
 **Toivottavasti pidätte**
 
