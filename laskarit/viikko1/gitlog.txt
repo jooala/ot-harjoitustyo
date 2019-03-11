@@ -1,0 +1,113 @@
+commit ad6e6d25a2c5d813ab9247b1dfe960cc33d99aa3
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:32:05 2019 +0200
+
+    file1 poisto ja file22 nimeäminen
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7dadb6e5cec929a83f5106c444807cec5c654c87
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:29:14 2019 +0200
+
+    tiedostoja
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 9a18351853f6b23691131a58fcee3a4a83153019
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:25:21 2019 +0200
+
+    patch kommitti
+
+ eka.txt    | 2 +-
+ kolmas.txt | 3 +++
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+commit 455002a3616d49992978a429fd586a9afe7348bb
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:22:46 2019 +0200
+
+    uudelleenimeys
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit fa6d25cd6765bfc0048c618e7d81096f6604eac0
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:22:13 2019 +0200
+
+    deleted
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit c49ef790aca226e6e42416345d2f9c0d729539cb
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:20:48 2019 +0200
+
+    poistoa ja lisäystä
+
+ tiedosto.txt | 25 +------------------------
+ 1 file changed, 1 insertion(+), 24 deletions(-)
+
+commit 3192aa1488faa230d8a5f66d08b64e8dc2f51d4a
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:19:09 2019 +0200
+
+    tekstiä
+
+ tiedosto.txt | 1022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 1021 insertions(+), 1 deletion(-)
+
+commit 138b6743e98ad46bd977d0ee205595eaa2126aad
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:12:38 2019 +0200
+
+    uusi hakemisto
+
+ stuff/haloo.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e2adb09796a5d6c7f5c2de64fc23e82948d974f0
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:11:57 2019 +0200
+
+    muutokset uusiks
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 8b1da85464fd801e6ae5e74d3710bf09540e86b5
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:11:03 2019 +0200
+
+    lisäystä
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 6ee53b6753047e465dcdfa55531386ed5e240e79
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:08:54 2019 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit f378b223a5d63b5687a218894cf19fb645314ac9
+Author: Joonas Alanenpää <Joonas Alanenpää>
+Date:   Mon Mar 11 19:07:01 2019 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
