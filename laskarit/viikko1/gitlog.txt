@@ -22,7 +22,7 @@ Date:   Mon Mar 11 19:29:14 2019 +0200
 commit 9a18351853f6b23691131a58fcee3a4a83153019
 Author: Joonas Alanenpää <Joonas Alanenpää>
 Date:   Mon Mar 11 19:25:21 2019 +0200
-
+a
     patch kommitti
 
  eka.txt    | 2 +-
