@@ -1,23 +1,11 @@
-# Ohjelmistotekniikka, Harjoitustyö
+# Bugiraportointi- työkalu: Ohjelmistotekniikka, Harjoitustyö
 
-Tänne tulee jossain vaiheessa *kunnollinen* **tietopläjäys** projektista, mutta tällä hetkellä se on pahasti keskeneräinen. Katsotaan lopulta, mitä tänne keksitään. 
+Sovelluksen avulla pystytään lisäämään bugeja tietokantaan ja selaamaan sovelluksen avulla lisättyjä bugeja. Bugeista kysytään tietoja ja minkä tasoinen prioriteetti kyseisellä bugilla on. Bugeja pystyy selaamaan listassa, avaamaan bugin tiedot ja merkkaamaan tehdyiksi. Käyttäjä voi myös tuoda itselleen esille prioriteettitasolla suurimman bugin ja pystyy valitsemaan mikäli selvitti bugin tehdyksi. 
 
-**Toivottavasti pidätte!**
 
-*- Joonas Alanenpää*
 
-## Alustava määrittelydokumentti
+## Dokumentaatio
 [Alustava määrittelydokumentti](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/M%C3%A4%C3%A4rittelydokumentti.md)
 
-## Työaikakirjanpito
-[Tuntikirjanpito](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Työaikakirjanpito](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-
-## Tehtävät
-### Viikko 1:
-[gitlog.txt](https://github.com/jooala/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](https://github.com/jooala/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-### Viikko 2:
-[Kuvakaappaus Jacocosta](https://github.com/jooala/ot-harjoitustyo/blob/master/laskarit/viikko2/screenshot.png)
