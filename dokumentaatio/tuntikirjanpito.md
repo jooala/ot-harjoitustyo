@@ -2,5 +2,5 @@
 
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
-| 13.3. | 3    | Viikon 1 laskarit |
-| 20.3. | 4    | Viikon 2 laskarit sekä harjoitustyön määrittelydokumentti |
+| 20.3. | 1   | harjoitustyön määrittelydokumentti |
+| 30.3. | 5  | suoritettu projektin rakennetta: dao, tein kirjautumistoiminnallisuuden valmiiksi  ja testit Users classille|
