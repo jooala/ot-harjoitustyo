@@ -9,3 +9,4 @@ Sovelluksen avulla pystytään lisäämään bugeja tietokantaan ja selaamaan so
 
 [Työaikakirjanpito](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+[Arkkitehtuurikuvaus](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
