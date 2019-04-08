@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bugiraportti.controller.MainSceneController">
+    <children>
+        <Label fx:id="display" alignment="CENTER" layoutX="206.0" layoutY="24.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="146.0" text="Front Page" />
+      <Button fx:id="logout" layoutX="487.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleLogout" text="Log out" />
+      <Button fx:id="listbugs" layoutX="230.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleListBugs" text="List all the bugs" />
+      <Button fx:id="reportbug" layoutX="222.0" layoutY="82.0" mnemonicParsing="false" onAction="#handleReportbug" text="Report a new bug " />
+      <Button fx:id="solvebug" layoutX="240.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleSolveBugs" text="Solve a bug" />
+    </children>
+</AnchorPane>
