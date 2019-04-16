@@ -50,7 +50,7 @@ public class DBUserDao implements UserDao<User, Integer> {
     @Override
     public List<User> list() throws SQLException {
         List<User> users = jdbcTemplate.query("SELECT * FROM User",
-                (rs, rowNum) -> new User(rs.getInt("id"), rs.getString("name"), rs.getString("username")));
+            (rs, rowNum) -> new User(rs.getInt("id"), rs.getString("name"), rs.getString("username")));
         return users;
     }
 
@@ -68,7 +68,7 @@ public class DBUserDao implements UserDao<User, Integer> {
 
     public boolean findUserIfExists(String username) throws SQLException {
         List<User> users = jdbcTemplate.query("SELECT * FROM User WHERE username = ?",
-                (rs, rowNum) -> new User(rs.getInt("id"), rs.getString("name"), rs.getString("username")), username);
+            (rs, rowNum) -> new User(rs.getInt("id"), rs.getString("name"), rs.getString("username")), username);
         if (users.isEmpty()) {
             return true;
         }

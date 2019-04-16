@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class DBBugDao implements BugDao<Bug, Integer>{
+public class DBBugDao implements BugDao<Bug, Integer> {
 
     private Bug bug;
     @Autowired
@@ -44,7 +44,7 @@ public class DBBugDao implements BugDao<Bug, Integer>{
     @Override
     public List<Bug> list() throws SQLException {
         List<Bug> bugs = jdbcTemplate.query("SELECT * FROM Bug",
-                (rs, rowNum) -> new Bug(rs.getInt("id"), rs.getString("title"), rs.getString("summary"), rs.getInt("priority"), rs.getString("steps"), rs.getString("expectedresult"), rs.getString("actualresult")));
+            (rs, rowNum) -> new Bug(rs.getInt("id"), rs.getString("title"), rs.getString("summary"), rs.getInt("priority"), rs.getString("steps"), rs.getString("expectedresult"), rs.getString("actualresult")));
         return bugs;
     }
     

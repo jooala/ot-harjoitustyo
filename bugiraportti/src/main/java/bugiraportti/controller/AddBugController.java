@@ -61,6 +61,7 @@ public class AddBugController implements Initializable {
     private void handleBack(ActionEvent event) throws SQLException, InterruptedException {
         stageManager.switchScene(FxmlView.MAIN);
     }
+
     @FXML
     private void handleReportbug(ActionEvent event) throws SQLException, InterruptedException {
         String titleR = title.getText();
@@ -72,6 +73,7 @@ public class AddBugController implements Initializable {
         bugService.reportBug(titleR, summaryR, priorityR, stepsR, expectedResultR, actualResultR);
         stageManager.switchScene(FxmlView.MAIN);
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //

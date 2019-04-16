@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ListBugsController {
-    
+
     private final StageManager stageManager;
     @Autowired
     private BugService bugService;
@@ -28,13 +28,14 @@ public class ListBugsController {
 
     @FXML
     private ListView list;
-    
+
     @Autowired
     @Lazy
     public ListBugsController(StageManager stageManager) throws SQLException {
         this.stageManager = stageManager;
-        
+
     }
+
     @FXML
     private void handleList(ActionEvent event) throws SQLException {
         ObservableList<Bug> items = bugService.listBugs();
@@ -45,6 +46,7 @@ public class ListBugsController {
         ObservableList<String> text = FXCollections.observableArrayList(strings);
         list.setItems(text);
     }
+
     @FXML
     private void handleBack(ActionEvent event) {
         stageManager.switchScene(FxmlView.MAIN);
