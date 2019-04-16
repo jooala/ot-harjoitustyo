@@ -30,7 +30,7 @@ public class Main extends Application {
     protected StageManager stageManager;
 
     public static void main(final String[] args) {
-
+        //alustaTietokanta();
         Application.launch(args);
     }
 
@@ -66,6 +66,16 @@ public class Main extends Application {
             conn.prepareStatement("DROP TABLE User IF EXISTS;").executeUpdate();
             conn.prepareStatement("CREATE TABLE User (\n" + "    id INTEGER AUTO_INCREMENT PRIMARY KEY,\n"
                     + "    name VARCHAR(255),\n" + "    username VARCHAR(255),\n" + ");").executeUpdate();
+            conn.prepareStatement("DROP TABLE Bug IF EXISTS;").executeUpdate();
+            conn.prepareStatement("CREATE TABLE Bug (\n"
+                    + "    id INTEGER AUTO_INCREMENT PRIMARY KEY,\n"
+                    + "    title VARCHAR(255),\n"
+                    + "    summary TEXT,\n"
+                    + "    priority INTEGER,\n"     
+                    + "    steps TEXT,\n"   
+                    + "    expectedresult TEXT,\n"   
+                    + "    actualresult TEXT,\n"   
+                    + ");").executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -43,12 +43,12 @@ public class MainSceneController implements Initializable {
 
     @FXML
     private void handleReportbug(ActionEvent event) {
-
+        stageManager.switchScene(FxmlView.ADDBUG);
     }
 
     @FXML
     private void handleListBugs(ActionEvent event) {
-
+        stageManager.switchScene(FxmlView.LISTBUGS);
     }
 
     @FXML

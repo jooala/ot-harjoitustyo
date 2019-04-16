@@ -1,9 +1,0 @@
-2019-04-08 21:01:30 database: flush
-org.h2.message.DbException: General error: "java.lang.IllegalStateException: Writing to nio:D:/Koulujuttui/ohjelmistotekniikka/ot-harjoitustyo/viikko2/bugiraportti/bugreport.mv.db failed; length 4096 at 32768 [1.4.197/2]" [50000-197]
-	at org.h2.message.DbException.get(DbException.java:168)
-	at org.h2.message.DbException.convert(DbException.java:307)
-	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
-	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
-	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
-	at org.h2.mvstore.MVStore.write(MVStore.java:828)
-	at org.h2.mvstore.MVStore.storeNowTry(MVStore.java:1166)
