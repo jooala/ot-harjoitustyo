@@ -6,4 +6,5 @@
 | 30.3. | 5  | suoritettu projektin rakennetta: dao, tein kirjautumistoiminnallisuuden valmiiksi  ja testit Users classille|
 | 8.4. | 9  | spring ja fxml yhteensopiviksi, käyttöliittymää tehty kirjautumiselle, lisää testejä |
 | 16.4. | 6  | bugien lisäystoiminnallisuus sekä listaustoiminnallisuus ja niiden näkymät tehty |
-Yhteisaika: 21h
+| 26.4. | 8  | bugien ratkaiseminen tehty, näkymät sekä dokumentaatiota |
+Yhteisaika: 29h
