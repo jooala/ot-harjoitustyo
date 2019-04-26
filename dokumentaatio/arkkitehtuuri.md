@@ -1,7 +1,7 @@
 # Arkkitehtuurikuvaus
 
 ## Rakenne
-Rakenne noudattaa nelitasoista kerrosarkkitehtuuria:
+Rakenne noudattaa nelitasoista kerrosarkkitehtuuria:<br>
 <img src="https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/images/pakkausrakenne.png">
 
 ## Sovelluslogiikka
