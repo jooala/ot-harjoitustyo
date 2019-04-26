@@ -11,9 +11,12 @@ Sovelluksen avulla pystytään lisäämään bugeja tietokantaan ja selaamaan so
 
 [Arkkitehtuurikuvaus](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+[Käyttöohje](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/k%C3%A4ytt%C3%B6ohje.md)
+
 ## Releaset
 [Viikko 5](https://github.com/jooala/ot-harjoitustyo/releases/tag/viikko5)
 
+[Viikko 6](https://github.com/jooala/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Komentorivitoiminnot
 
