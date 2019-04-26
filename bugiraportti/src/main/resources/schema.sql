@@ -4,4 +4,4 @@ CREATE TABLE User (id INTEGER AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), use
 
 DROP TABLE Bug IF EXISTS;
 
-CREATE TABLE Bug (id INTEGER AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255), summary TEXT, priority INTEGER, steps TEXT, expectedResult TEXT, actualResult TEXT);
+CREATE TABLE Bug (id INTEGER AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255), summary TEXT, priority INTEGER, steps TEXT, expectedResult TEXT, actualResult TEXT, solved BOOLEAN);

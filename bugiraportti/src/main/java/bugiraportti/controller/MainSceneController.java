@@ -53,6 +53,6 @@ public class MainSceneController implements Initializable {
 
     @FXML
     private void handleSolveBugs(ActionEvent event) {
-
+        stageManager.switchScene(FxmlView.GETBUG);
     }
 }

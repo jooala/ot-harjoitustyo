@@ -2,6 +2,9 @@ package bugiraportti.domain;
 
 import java.util.*;
 
+/**
+ * Bug-olion luokka, mistä löytyy konstruktorit, getterit ja setterit.
+ */
 public class Bug {
 
     private int id;
@@ -11,9 +14,10 @@ public class Bug {
     private String steps;
     private String expectedResult;
     private String actualResult;
+    private boolean solved;
 
     public Bug(int id, String title, String summary, int priority, String steps, String expectedResult,
-            String actualResult) {
+            String actualResult, boolean solved) {
         this.id = id;
         this.title = title;
         this.summary = summary;
@@ -21,15 +25,18 @@ public class Bug {
         this.steps = steps;
         this.expectedResult = expectedResult;
         this.actualResult = actualResult;
+        this.solved = solved;
     }
 
-    public Bug(String title, String summary, int priority, String steps, String expectedResult, String actualResult) {
+    public Bug(String title, String summary, int priority, String steps, String expectedResult, String actualResult,
+            boolean solved) {
         this.title = title;
         this.summary = summary;
         this.priority = priority;
         this.steps = steps;
         this.expectedResult = expectedResult;
         this.actualResult = actualResult;
+        this.solved = solved;
     }
 
     public int getId() {
@@ -86,5 +93,13 @@ public class Bug {
 
     public void setActualResult(String actualResult) {
         this.actualResult = actualResult;
+    }
+
+    public boolean getSolved() {
+        return this.solved;
+    }
+
+    public void setBoolean(boolean solved) {
+        this.solved = solved;
     }
 }

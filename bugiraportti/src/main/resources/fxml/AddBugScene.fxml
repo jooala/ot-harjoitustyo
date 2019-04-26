@@ -11,7 +11,7 @@
     <children>
         <Label fx:id="display" alignment="CENTER" layoutX="206.0" layoutY="12.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="146.0" text="Report a new Bug" />
       <Button fx:id="back" layoutX="414.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBack" text="Return to Main Menu" />
-      <Button fx:id="reportbug" layoutX="440.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleReportbug" text="Lisää uusi bugi" />
+      <Button fx:id="reportbug" layoutX="443.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleReportbug" text="Add the Bug" />
       <TextField fx:id="title" layoutX="176.0" layoutY="56.0" prefHeight="25.0" prefWidth="206.0" />
       <TextArea fx:id="summary" layoutX="17.0" layoutY="96.0" prefHeight="101.0" prefWidth="200.0" />
       <TextArea fx:id="expectedResult" layoutX="326.0" layoutY="163.0" prefHeight="68.0" prefWidth="200.0" />

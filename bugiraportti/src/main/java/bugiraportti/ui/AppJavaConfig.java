@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppJavaConfig {
+    
     @Autowired
     SpringFXMLLoader springFXMLLoader;
 

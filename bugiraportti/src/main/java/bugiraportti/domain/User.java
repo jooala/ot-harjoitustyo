@@ -1,5 +1,8 @@
 package bugiraportti.domain;
 
+/**
+ * Käyttäjä-olion luokka, mistä löytyy konstruktorit, getterit ja setterit.
+ */
 public class User {
     private int id;
     private String name;

@@ -58,6 +58,17 @@ public enum FxmlView {
         String getFxmlFile() {
             return "/fxml/ListBugsScene.fxml";
         }
+    },
+    GETBUG {
+        @Override
+        String getTitle() {
+            return getStringFromResourceBundle("getbug.title");
+        }
+
+        @Override
+        String getFxmlFile() {
+            return "/fxml/GetBugScene.fxml";
+        }
     };
     abstract String getTitle();
 

@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 import bugiraportti.domain.User;
 import bugiraportti.domain.User;
 
+/**
+ * Luokka toimii alustana DBUserDaon metodeille.
+ */
 public interface UserDao<T, K> {
     void create(T object) throws SQLException;
 
@@ -19,4 +22,6 @@ public interface UserDao<T, K> {
     List<T> list() throws SQLException;
 
     User findByUsername(String username) throws SQLException;
+
+    boolean findUserIfExists(String username) throws SQLException;
 }

@@ -27,6 +27,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
+/**
+ * Luokka toimii controllerina JavaFX-tapahtumille AddBugScene-näkymässä.
+ */
 @Component
 public class AddBugController implements Initializable {
 
@@ -57,11 +60,19 @@ public class AddBugController implements Initializable {
     @FXML
     private Slider priority;
 
+    /**
+     * Palauttaa näkymän takaisin MainSceneen.
+     */
     @FXML
     private void handleBack(ActionEvent event) throws SQLException, InterruptedException {
         stageManager.switchScene(FxmlView.MAIN);
     }
 
+    /**
+     * Ottaa annetut tiedot JavaFX-näkymästä ja kutsuu toista metodia lisätäkseen
+     * tietokantaan bugin annetuilla tiedoilla. Vaihtaa takaisin MainSceneen
+     * lopuksi.
+     */
     @FXML
     private void handleReportbug(ActionEvent event) throws SQLException, InterruptedException {
         String titleR = title.getText();

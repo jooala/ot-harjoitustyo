@@ -33,7 +33,7 @@ public class BugTest {
     
     @Before
     public void setUp() {
-        bug = new Bug(1, "otsikko", "tiivistelmä", 9, "askeleet", "odotettuTulos", "oikea tulos");
+        bug = new Bug(1, "otsikko", "tiivistelmä", 9, "askeleet", "odotettuTulos", "oikea tulos", false);
     }
     
     @After
@@ -48,13 +48,15 @@ public class BugTest {
         assertEquals("askeleet", bug.getSteps());
         assertEquals("odotettuTulos", bug.getExpectedResult());
         assertEquals("oikea tulos", bug.getActualResult());
-        bug = new Bug("title", "summary", 4, "step", "väärä", "oikein");
+        assertEquals(false, bug.getSolved());
+        bug = new Bug("title", "summary", 4, "step", "väärä", "oikein", true);
         assertEquals("title", bug.getTitle());
         assertEquals("summary", bug.getSummary());
         assertEquals(4, bug.getPriority());
         assertEquals("step", bug.getSteps());
         assertEquals("väärä", bug.getExpectedResult());
         assertEquals("oikein", bug.getActualResult());
+        assertEquals(true, bug.getSolved());
     }
     @Test
     public void setteritToimii() {
@@ -65,6 +67,7 @@ public class BugTest {
         bug.setSteps("monta askelta");
         bug.setExpectedResult("testissä");
         bug.setActualResult("hupsista hello");
+        bug.setBoolean(false);
         assertEquals(8, bug.getId());
         assertEquals("hei vaan", bug.getTitle());
         assertEquals("olen uusi tiivistelmä", bug.getSummary());
@@ -72,5 +75,6 @@ public class BugTest {
         assertEquals("monta askelta", bug.getSteps());
         assertEquals("testissä", bug.getExpectedResult());
         assertEquals("hupsista hello", bug.getActualResult());
+        assertEquals(false, bug.getSolved());
     }
 }
