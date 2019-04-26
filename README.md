@@ -46,6 +46,12 @@ mvn package
 
 Generoi hakemistoon target jar-tiedoston: bugiraportti-1.0-SNAPSHOT.jar
 
+### JavaDoc
+JavaDocin pystyy generoimaan seuraavalla komennolla
+
+```
+mvn javadoc:javadoc
+```
 
 ### Checkstyle
 
