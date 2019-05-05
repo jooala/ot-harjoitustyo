@@ -1,5 +1,8 @@
+package domain;
+
 
 import bugiraportti.Main;
+import bugiraportti.dao.DBBugDao;
 import bugiraportti.dao.DBUserDao;
 import bugiraportti.domain.Bug;
 import bugiraportti.domain.BugService;
@@ -41,6 +44,8 @@ public class ServiceTest {
     private User u1;
     private static UserService service;
     private static BugService bugService;
+    private static DBUserDao userdao;
+    private static DBBugDao bugdao;
     private static GenericApplicationContext ctx;
 
     public ServiceTest() {
@@ -51,6 +56,8 @@ public class ServiceTest {
         ctx = new AnnotationConfigApplicationContext(Main.class);
         service = ctx.getBean(UserService.class);
         bugService = ctx.getBean(BugService.class);
+        userdao = ctx.getBean(DBUserDao.class);
+        bugdao = ctx.getBean(DBBugDao.class);
     }
 
     @AfterClass
@@ -74,7 +81,11 @@ public class ServiceTest {
         assertEquals(service.login("matti"), true);
         service.logout();
     }
-
+    @Test
+    public void rekisteröityminenPalauttaaFalseJaTrue() throws SQLException {
+        assertEquals(service.register("esko", "hello"), true);
+        assertEquals(service.register("esko", "hello"), false);
+    }
     @Test
     public void palauttaaOikeanKirjaantuneen() throws SQLException {
         service.register("kokeilu", "uusi");
@@ -113,4 +124,50 @@ public class ServiceTest {
         assertEquals(1, bugs.get(0).getId());
         assertEquals("aa", bugs.get(1).getTitle());
     }
-}
+    
+    @Test
+    public void deleteToimiiKummassakinDaossa() throws SQLException {
+        User user = new User("taas", "täällä");
+        userdao.create(user);
+        assertEquals(userdao.findByUsername("täällä").getName(), "taas");
+        userdao.delete(userdao.findByUsername("täällä").getId());
+        assertEquals(userdao.findByUsername("täällä"), null);
+        Bug bug = new Bug("jaa", "kek", 10, "jee", "world", "hello", false);
+        bugdao.create(bug);
+        assertEquals(bugdao.findPriority().get(0).getPriority(), 10);
+        bugdao.delete(bugdao.findPriority().get(0).getId());
+        assertEquals(bugdao.findPriority().get(0).getPriority(), 9);
+    }
+    
+    @Test
+    public void bugUpdateToimii() throws SQLException {
+        assertEquals(bugdao.read(1).getTitle(), "otsikko");
+        Bug bug = bugdao.read(1);
+        bug.setTitle("mita");
+        bugdao.update(bug);
+        assertEquals(bugdao.read(1).getTitle(), "mita");
+    }
+    
+    @Test
+    public void listUserToimii() throws SQLException {
+        User user = new User("hello" , "world");
+        userdao.create(user);
+        assertEquals(userdao.list().get(2).getName(), "hello");
+    }
+    
+    @Test 
+    public void readUserToimii() throws SQLException {
+        User user = new User("aaa", "demo");
+        userdao.create(user);
+        assertEquals(userdao.read(1).getId(), 1);
+    }
+    
+    @Test
+    public void updateUserToimii() throws SQLException {
+        User user = userdao.read(1);
+        assertEquals(userdao.read(1).getName(), "aaa");
+        user.setName("late");
+        userdao.update(user);
+        assertEquals(userdao.read(1).getName(), "late");
+    }
+ }

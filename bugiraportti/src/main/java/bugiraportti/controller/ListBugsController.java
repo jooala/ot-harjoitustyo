@@ -41,7 +41,7 @@ public class ListBugsController {
         ObservableList<Bug> items = bugService.listBugs();
         List<String> strings = new ArrayList();
         for (Bug bug : items) {
-            strings.add(bug.getId() + ": " + bug.getTitle() + ", " + bug.getSummary() + ", " + bug.getPriority());
+            strings.add(bug.getId() + ": " + bug.getTitle() + ", " + bug.getSummary() + ", " + bug.getPriority() + ", " + bug.getSolved());
         }
         ObservableList<String> text = FXCollections.observableArrayList(strings);
         list.setItems(text);

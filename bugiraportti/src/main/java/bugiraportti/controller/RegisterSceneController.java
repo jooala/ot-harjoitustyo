@@ -37,7 +37,9 @@ public class RegisterSceneController implements Initializable {
     private TextField name;
     @FXML
     private TextField username;
-
+    @FXML
+    private Label error;
+    
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -47,7 +49,10 @@ public class RegisterSceneController implements Initializable {
     private void handleCreate(ActionEvent event) throws SQLException {
         String nameRegister = name.getText();
         String usernameRegister = username.getText();
-        userService.register(nameRegister, usernameRegister);
-        stageManager.switchScene(FxmlView.LOGIN);
+        if (userService.register(nameRegister, usernameRegister) == true) {
+            stageManager.switchScene(FxmlView.LOGIN);
+        } else {
+            error.setText("Already registered. Try again.");
+        }
     }
 }

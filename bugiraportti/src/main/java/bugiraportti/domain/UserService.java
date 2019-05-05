@@ -55,10 +55,13 @@ public class UserService {
      * Tallentaa tietokantaan uuden käyttäjän, mikäli samannimistä käyttäjää ei
      * tietokannassa vielä ole.
      */
-    public void register(String name, String username) throws SQLException {
+    public boolean register(String name, String username) throws SQLException {
         User user = new User(name, username);
         if (dao.findUserIfExists(username) == true) {
             dao.create(user);
+            return true;
+        } else {
+            return false;
         }
     }
 }
