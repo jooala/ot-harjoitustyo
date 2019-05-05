@@ -2,7 +2,7 @@
 
 Sovelluksen avulla pystytään lisäämään bugeja tietokantaan ja selaamaan sovelluksen avulla lisättyjä bugeja. Bugeista kysytään tietoja ja minkä tasoinen prioriteetti kyseisellä bugilla on. Bugeja pystyy selaamaan listassa, avaamaan bugin tiedot ja merkkaamaan tehdyiksi. Käyttäjä voi myös tuoda itselleen esille prioriteettitasolla suurimman bugin ja pystyy valitsemaan mikäli selvitti bugin tehdyksi. 
 
-
+<hr>
 
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/M%C3%A4%C3%A4rittelydokumentti.md)
@@ -13,12 +13,18 @@ Sovelluksen avulla pystytään lisäämään bugeja tietokantaan ja selaamaan so
 
 [Käyttöohje](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/k%C3%A4ytt%C3%B6ohje.md)
 
+[Testausdokumentti](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/testausdokumentti.md)
+
+<hr>
+
 ## Releaset
 [Viikko 5](https://github.com/jooala/ot-harjoitustyo/releases/tag/viikko5)
 
 [Viikko 6](https://github.com/jooala/ot-harjoitustyo/releases/tag/viikko6)
 
 [Loppupalautus](https://github.com/jooala/ot-harjoitustyo/releases/tag/loppupalautus)
+
+<hr>
 
 ## Komentorivitoiminnot
 
@@ -64,3 +70,5 @@ Tiedoston [checkstyle.xml](https://github.com/jooala/ot-harjoitustyo/blob/master
 ```
 
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
+
+<hr>
