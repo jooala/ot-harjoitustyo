@@ -7,4 +7,5 @@
 | 8.4. | 9  | spring ja fxml yhteensopiviksi, käyttöliittymää tehty kirjautumiselle, lisää testejä |
 | 16.4. | 6  | bugien lisäystoiminnallisuus sekä listaustoiminnallisuus ja niiden näkymät tehty |
 | 26.4. | 8  | bugien ratkaiseminen tehty, näkymät sekä dokumentaatiota |
-Yhteisaika: 29h
+| 5.5. | 5  | dokumentaation tekeminen loppuun, testit 100%, bugfixejä |
+Yhteisaika: 33h

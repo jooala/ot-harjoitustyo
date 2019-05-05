@@ -5,7 +5,7 @@ Sovelluksen avulla pystytään lisäämään bugeja tietokantaan ja selaamaan so
 
 
 ## Dokumentaatio
-[Alustava määrittelydokumentti](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/M%C3%A4%C3%A4rittelydokumentti.md)
+[Vaatimusmäärittely](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/M%C3%A4%C3%A4rittelydokumentti.md)
 
 [Työaikakirjanpito](https://github.com/jooala/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
