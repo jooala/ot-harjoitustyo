@@ -18,6 +18,8 @@ Sovelluksen avulla pystytään lisäämään bugeja tietokantaan ja selaamaan so
 
 [Viikko 6](https://github.com/jooala/ot-harjoitustyo/releases/tag/viikko6)
 
+[Loppupalautus](https://github.com/jooala/ot-harjoitustyo/releases/tag/loppupalautus)
+
 ## Komentorivitoiminnot
 
 ### Testaaminen
